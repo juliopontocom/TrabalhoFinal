@@ -2,7 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package src.main.java.com.mycompany.Sistema;
+package com.mycompany.tf;
+
+import com.mycompany.Sistema.GUI;
+
 /**
  *
  * @author julio
@@ -10,9 +13,7 @@ package src.main.java.com.mycompany.Sistema;
 public class TF {
 
     public static void main(String[] args) {
-        new GUI();
-
-
+        GUI gui = new GUI();
         //julio programador dev pica
     }
 }
