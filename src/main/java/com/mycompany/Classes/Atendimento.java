@@ -1,4 +1,4 @@
-package com.mycompany.Classes;
+package src.main.java.com.mycompany.Classes;
 
 public class Atendimento {
 
