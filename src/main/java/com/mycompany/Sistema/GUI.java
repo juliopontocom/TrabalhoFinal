@@ -36,12 +36,6 @@ public class GUI extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jpMenu1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jpInterface = new javax.swing.JPanel();
-        jpInterfaceReadMe = new javax.swing.JPanel();
-        jlbReadme = new javax.swing.JLabel();
-        jpInterfaceCadastra = new javax.swing.JPanel();
-        jcbCadastra = new javax.swing.JComboBox<>();
-        jlCadastra = new javax.swing.JLabel();
         jpCadastraEvento = new javax.swing.JPanel();
         jComboBox1 = new javax.swing.JComboBox<>();
         jLabel4 = new javax.swing.JLabel();
@@ -58,6 +52,13 @@ public class GUI extends javax.swing.JFrame {
         jTextField6 = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jpInterface = new javax.swing.JPanel();
+        jpInterfaceReadMe = new javax.swing.JPanel();
+        jlbReadme = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jpInterfaceCadastra = new javax.swing.JPanel();
+        jcbCadastra = new javax.swing.JComboBox<>();
+        jlCadastra = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -119,93 +120,6 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap(10, Short.MAX_VALUE)
                 .addComponent(jLabel3)
                 .addContainerGap())
-        );
-
-        javax.swing.GroupLayout jpMenuLayout = new javax.swing.GroupLayout(jpMenu);
-        jpMenu.setLayout(jpMenuLayout);
-        jpMenuLayout.setHorizontalGroup(
-            jpMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpMenuLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(jpMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jpMenu1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jpMenu2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jpMenuLayout.createSequentialGroup()
-                        .addGap(11, 11, 11)
-                        .addComponent(jLabel1)
-                        .addGap(0, 17, Short.MAX_VALUE)))
-                .addGap(15, 15, 15))
-        );
-        jpMenuLayout.setVerticalGroup(
-            jpMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpMenuLayout.createSequentialGroup()
-                .addGap(43, 43, 43)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(88, 88, 88)
-                .addComponent(jpMenu1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jpMenu2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(343, Short.MAX_VALUE))
-        );
-
-        jpInterfaceReadMe.setBackground(new java.awt.Color(51, 51, 51));
-
-        jlbReadme.setBackground(new java.awt.Color(51, 51, 51));
-        jlbReadme.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
-        jlbReadme.setForeground(new java.awt.Color(255, 255, 255));
-        jlbReadme.setText("aqui vai ser estar escrito um tutorial do programa");
-
-        javax.swing.GroupLayout jpInterfaceReadMeLayout = new javax.swing.GroupLayout(jpInterfaceReadMe);
-        jpInterfaceReadMe.setLayout(jpInterfaceReadMeLayout);
-        jpInterfaceReadMeLayout.setHorizontalGroup(
-            jpInterfaceReadMeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpInterfaceReadMeLayout.createSequentialGroup()
-                .addContainerGap(116, Short.MAX_VALUE)
-                .addComponent(jlbReadme, javax.swing.GroupLayout.PREFERRED_SIZE, 527, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(64, 64, 64))
-        );
-        jpInterfaceReadMeLayout.setVerticalGroup(
-            jpInterfaceReadMeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpInterfaceReadMeLayout.createSequentialGroup()
-                .addGap(110, 110, 110)
-                .addComponent(jlbReadme, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(452, Short.MAX_VALUE))
-        );
-
-        jpInterfaceCadastra.setBackground(new java.awt.Color(51, 51, 51));
-
-        jcbCadastra.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
-        jcbCadastra.setForeground(new java.awt.Color(255, 255, 255));
-        jcbCadastra.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Evento", "Equipe", "Equipamento", "Atendimento" }));
-        jcbCadastra.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jcbCadastraActionPerformed(evt);
-            }
-        });
-
-        jlCadastra.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
-        jlCadastra.setForeground(new java.awt.Color(255, 255, 255));
-        jlCadastra.setText("o que deseja cadastrar :");
-
-        javax.swing.GroupLayout jpInterfaceCadastraLayout = new javax.swing.GroupLayout(jpInterfaceCadastra);
-        jpInterfaceCadastra.setLayout(jpInterfaceCadastraLayout);
-        jpInterfaceCadastraLayout.setHorizontalGroup(
-            jpInterfaceCadastraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpInterfaceCadastraLayout.createSequentialGroup()
-                .addGap(142, 142, 142)
-                .addComponent(jlCadastra, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jcbCadastra, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(215, Short.MAX_VALUE))
-        );
-        jpInterfaceCadastraLayout.setVerticalGroup(
-            jpInterfaceCadastraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpInterfaceCadastraLayout.createSequentialGroup()
-                .addGap(81, 81, 81)
-                .addGroup(jpInterfaceCadastraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jcbCadastra, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jlCadastra))
-                .addContainerGap(46, Short.MAX_VALUE))
         );
 
         jpCadastraEvento.setBackground(new java.awt.Color(51, 51, 51));
@@ -271,7 +185,7 @@ public class GUI extends javax.swing.JFrame {
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 158, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 322, Short.MAX_VALUE)
                 .addGroup(jpCadastraEventoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jpCadastraEventoLayout.createSequentialGroup()
                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -324,6 +238,117 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap(152, Short.MAX_VALUE))
         );
 
+        javax.swing.GroupLayout jpMenuLayout = new javax.swing.GroupLayout(jpMenu);
+        jpMenu.setLayout(jpMenuLayout);
+        jpMenuLayout.setHorizontalGroup(
+            jpMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpMenuLayout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addGroup(jpMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jpMenu1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jpMenu2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jpMenuLayout.createSequentialGroup()
+                        .addGap(11, 11, 11)
+                        .addComponent(jLabel1)
+                        .addGap(0, 17, Short.MAX_VALUE)))
+                .addGap(730, 730, 730))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpMenuLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jpCadastraEvento, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(36, 36, 36))
+        );
+        jpMenuLayout.setVerticalGroup(
+            jpMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpMenuLayout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(88, 88, 88)
+                .addComponent(jpMenu1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jpMenu2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jpCadastraEvento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(159, Short.MAX_VALUE))
+        );
+
+        jpInterfaceReadMe.setBackground(new java.awt.Color(51, 51, 51));
+
+        jlbReadme.setBackground(new java.awt.Color(51, 51, 51));
+        jlbReadme.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
+        jlbReadme.setForeground(new java.awt.Color(255, 255, 255));
+        jlbReadme.setText("aqui vai ser estar escrito um tutorial do programa");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jpInterfaceReadMeLayout = new javax.swing.GroupLayout(jpInterfaceReadMe);
+        jpInterfaceReadMe.setLayout(jpInterfaceReadMeLayout);
+        jpInterfaceReadMeLayout.setHorizontalGroup(
+            jpInterfaceReadMeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpInterfaceReadMeLayout.createSequentialGroup()
+                .addContainerGap(47, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jlbReadme, javax.swing.GroupLayout.PREFERRED_SIZE, 527, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(64, 64, 64))
+        );
+        jpInterfaceReadMeLayout.setVerticalGroup(
+            jpInterfaceReadMeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpInterfaceReadMeLayout.createSequentialGroup()
+                .addGroup(jpInterfaceReadMeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpInterfaceReadMeLayout.createSequentialGroup()
+                        .addGap(110, 110, 110)
+                        .addComponent(jlbReadme, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jpInterfaceReadMeLayout.createSequentialGroup()
+                        .addGap(160, 160, 160)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(445, Short.MAX_VALUE))
+        );
+
+        jpInterfaceCadastra.setBackground(new java.awt.Color(51, 51, 51));
+
+        jcbCadastra.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
+        jcbCadastra.setForeground(new java.awt.Color(255, 255, 255));
+        jcbCadastra.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Evento", "Equipe", "Equipamento", "Atendimento" }));
+        jcbCadastra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jcbCadastraActionPerformed(evt);
+            }
+        });
+
+        jlCadastra.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
+        jlCadastra.setForeground(new java.awt.Color(255, 255, 255));
+        jlCadastra.setText("o que deseja cadastrar :");
+
+        javax.swing.GroupLayout jpInterfaceCadastraLayout = new javax.swing.GroupLayout(jpInterfaceCadastra);
+        jpInterfaceCadastra.setLayout(jpInterfaceCadastraLayout);
+        jpInterfaceCadastraLayout.setHorizontalGroup(
+            jpInterfaceCadastraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpInterfaceCadastraLayout.createSequentialGroup()
+                .addGap(142, 142, 142)
+                .addComponent(jlCadastra, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jcbCadastra, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(241, Short.MAX_VALUE))
+        );
+        jpInterfaceCadastraLayout.setVerticalGroup(
+            jpInterfaceCadastraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpInterfaceCadastraLayout.createSequentialGroup()
+                .addGap(81, 81, 81)
+                .addGroup(jpInterfaceCadastraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jcbCadastra, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jlCadastra))
+                .addContainerGap(46, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout jpInterfaceLayout = new javax.swing.GroupLayout(jpInterface);
         jpInterface.setLayout(jpInterfaceLayout);
         jpInterfaceLayout.setHorizontalGroup(
@@ -332,11 +357,6 @@ public class GUI extends javax.swing.JFrame {
                 .addGap(1, 1, 1)
                 .addComponent(jpInterfaceCadastra, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
-            .addGroup(jpInterfaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jpInterfaceLayout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(jpCadastraEvento, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addContainerGap()))
             .addGroup(jpInterfaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jpInterfaceLayout.createSequentialGroup()
                     .addContainerGap()
@@ -349,11 +369,6 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jpInterfaceCadastra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jpInterfaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpInterfaceLayout.createSequentialGroup()
-                    .addContainerGap(200, Short.MAX_VALUE)
-                    .addComponent(jpCadastraEvento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap()))
             .addGroup(jpInterfaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpInterfaceLayout.createSequentialGroup()
                     .addContainerGap()
@@ -378,7 +393,7 @@ public class GUI extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jpInterface, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 27, Short.MAX_VALUE)
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jpMenu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
@@ -424,6 +439,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;

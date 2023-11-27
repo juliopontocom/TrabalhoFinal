@@ -14,6 +14,15 @@ public class Atendimento {
         
         private Equipe equipe;
 
+        public Atendimento(int cod, String dataInicio, int duracao, String status, Evento evento, Equipe equipe){
+            this.cod = cod;
+            this.dataInicio = dataInicio;
+            this.duracao = duracao;
+            this.status = status;
+            this.evento = evento;
+            this.equipe = equipe;
+        }
+        
 	public double calculaCusto() {
             double custoDaEquipe;
             double custoDosEquipamentos;

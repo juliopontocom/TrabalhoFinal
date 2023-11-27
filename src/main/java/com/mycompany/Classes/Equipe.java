@@ -14,7 +14,7 @@ public class Equipe {
         
         private ArrayList<Equipamento> listaDeEquipamentos;
         
-        public Equipe(){
+        public Equipe(String codinome, int quantidade, double latitude, double longitude, ArrayList<Equipamento> listaDeEquipamentos){
             this.codinome = codinome;
             this.quantidade = quantidade;
             this.latitude = latitude;

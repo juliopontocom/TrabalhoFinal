@@ -4,7 +4,8 @@
 
 package com.mycompany.tf;
 
-import com.mycompany.Sistema.NewJFrame;
+import com.mycompany.Sistema.GUI;
+import com.mycompany.Sistema.Tela;
 
 /**
  *
@@ -13,7 +14,8 @@ import com.mycompany.Sistema.NewJFrame;
 public class TF {
 
     public static void main(String[] args) {
-        new NewJFrame();
+        Tela tela = new Tela();
+        //new GUI();
         //julio programador dev pica
     }
 }

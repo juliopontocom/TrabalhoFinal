@@ -7,10 +7,12 @@ com\mycompany\Sistema\GUI$4.class
 com\mycompany\Classes\Seca.class
 com\mycompany\Sistema\ACMERescue.class
 com\mycompany\Sistema\GUI.class
+com\mycompany\Sistema\Tela$1.class
 com\mycompany\Classes\Barco.class
 com\mycompany\Classes\CaminhaoTanque.class
 com\mycompany\Sistema\GUI$1.class
 com\mycompany\Classes\Terremoto.class
+com\mycompany\Sistema\Tela.class
 com\mycompany\Classes\Atendimento.class
 com\mycompany\tf\TF.class
 com\mycompany\Classes\Equipamento.class
